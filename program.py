@@ -9,7 +9,7 @@ def myFunction(name="", age=0, HadBirthday=None):
 
 Username = input('What is your name?')
 Age = int(input('How old are you?'))
-Birth = input('Wave you had your birthday this year?')
+Birth = input('Have you had your birthday this year?')
 if Birth.lower == 'y':
   Birthday = True
 print(myFunction(name=Username, age=Age, HadBirthday=Birth))
