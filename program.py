@@ -4,10 +4,12 @@
 def myFunction(name="", age=0, HadBirthday=None):
   if HadBirthday == True:
     age += 1  
-  return name + "was born in" + (age - 2023)
+  return str(name) + "was born in " + str(int(2023 - age))
 #MyFunction
 
-
-Birth = input('have you had your birthday this year?')
+Username = input('What is your name?')
+Age = int(input('How old are you?'))
+Birth = input('Wave you had your birthday this year?')
 if Birth.lower == 'y':
-  Birthday
+  Birthday = True
+print(myFunction(name=Username, age=Age, HadBirthday=Birth))
